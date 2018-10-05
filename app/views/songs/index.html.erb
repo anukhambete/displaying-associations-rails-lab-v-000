@@ -6,10 +6,10 @@
   <p><%= song.artist_name if song.artist %> - <%= link_to song.title, song_path(song) %></p>
 
   <%= link_to(song) do %>
-  <strong><%= @profile.name %></strong>
+  <strong><%= song.title %></strong>
   <% end %>
 
-  
+
   <% end %>
 
 </div>
