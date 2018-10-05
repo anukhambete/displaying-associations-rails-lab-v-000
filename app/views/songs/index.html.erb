@@ -4,7 +4,7 @@
   <% @songs.each do |song| %>
 
   <p><%= song.artist_name if song.artist %> - <%= link_to song.title, song_path(song) %></p>
-  <p><%= link_to(song.artist_name if song.artist + "-" + song.title, :controller => 'songs', :action => 'show', id: =>song.id) %></p>
+  <p><%= link_to(song.artist_name if song.artist + "-" + song.title, :controller => 'songs', :action => 'show', id: => song.id) %></p>
   <% end %>
 
 </div>
