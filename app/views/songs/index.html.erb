@@ -2,6 +2,7 @@
 
 <div>
   <% @songs.each do |song| %>
+  <% binding.pry %>
   <p><%= link_to song.title, song_path(song) %></p>
   <% end %>
 
