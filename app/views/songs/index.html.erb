@@ -2,7 +2,7 @@
 
 <div>
   <% @songs.each do |song| %>
-  <p><%= link_to song.artist_name, song_path(song) %></p>
+  <p><%= link_to song.artist.name, song_path(song) %></p>
   <% end %>
 
 </div>
