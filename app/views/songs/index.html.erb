@@ -6,7 +6,7 @@
   <p><%= song.artist_name if song.artist %> - <%= link_to song.title, song_path(song) %></p>
 
   <%= link_to(song) do %>
-  <strong><%= song.title %></strong>
+  <strong><%= song.title song.title %></strong>
   <% end %>
 
 
